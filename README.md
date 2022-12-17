@@ -1,2 +1,3 @@
 ### Hexlet tests and linter status:
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b92a9eacf37c4d16b06d5a0aa6cda923)](https://app.codacy.com/gh/Vihaes/frontend-project-44?utm_source=github.com&utm_medium=referral&utm_content=Vihaes/frontend-project-44&utm_campaign=Badge_Grade_Settings)
 [![Actions Status](https://github.com/Vihaes/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/Vihaes/frontend-project-44/actions)
