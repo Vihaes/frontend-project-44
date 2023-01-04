@@ -1,10 +1,13 @@
 #!/usr/bin/env node
-import readlineSync from 'readline-sync';
-import name from './cli.js';
+import readlineSync from "readline-sync";
+import name, { hello as greetings } from "./cli.js";
 
-const gameCalc = 'What is the result of the expression?';
-const sign = ['+', '-', '*'];
+console.log(greetings);
 
+const gameCalc = "What is the result of the expression?";
+console.log(gameCalc);
+
+const sign = ["+", "-", "*"];
 let wonCounter = 0;
 for (let i = 0; i < 3; i += 1) {
   const num1 = Math.floor(Math.random() * 10);
@@ -16,36 +19,43 @@ for (let i = 0; i < 3; i += 1) {
   let sum = 0;
   let symb = 0;
   switch (randomizedSign) {
-    case '+':
+    case "+":
       sum = num1 + num2;
-      symb = '+';
+      symb = "+";
       break;
-    case '-':
+    case "-":
       sum = num1 - num2;
-      symb = '-';
+      symb = "-";
       break;
-    case '*':
+    case "*":
       sum = num1 * num2;
-      symb = '*';
+      symb = "*";
       break;
     default:
-      console.log('');
+      console.log("");
   }
 
   sum = String(sum);
   // console.log(typeof sum);
 
-  const question = readlineSync.question(`Question: ${num1} ${symb} ${num2} \nYour answer: `);
+  const question = readlineSync.question(
+    `Question: ${num1} ${symb} ${num2} \nYour answer: `
+  );
   // console.log(typeof question);
   if (sum === question) {
-    console.log('Correct!');
+    console.log("Correct!");
     wonCounter += 1;
   } else if (sum !== question) {
-    console.log(question + ' is wrong answer ;(. Correct answer was ' + sum + '\nLet\'s try again, Tom!');
+    console.log(
+      question +
+        " is wrong answer ;(. Correct answer was " +
+        sum +
+        "\nLet's try again, Tom!"
+    );
   }
 
   if (wonCounter >= 3) {
-    console.log('Congratulations Sam, you are the champ!');
+    console.log("Congratulations Sam, you are the champ!");
   }
 }
 
