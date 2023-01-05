@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-import readlineSync from "readline-sync";
-import name, { hello as greetings } from "./cli.js";
+import readlineSync from 'readline-sync';
+import name, { hello as greetings } from './cli.js';
 
 console.log(greetings);
 
-const gameGcd = "Find the greatest common divisor of given numbers.";
+const gameGcd = 'Find the greatest common divisor of given numbers.';
 console.log(gameGcd);
 
 let winCounter = 0;
@@ -28,18 +28,13 @@ for (let i = 0; i < 3; i += 1) {
 
   maxDiv = String(maxDiv);
   if (maxDiv === question) {
-    console.log("Correct!");
+    console.log('Correct!');
     winCounter += 1;
   } else if (maxDiv !== question) {
-    console.log(
-      question +
-        " is wrong answer ;(. Correct answer was " +
-        maxDiv +
-        "\nLet's try again, Govard!"
-    );
+    console.log(question + ' is wrong answer ;(. Correct answer was ' + maxDiv + '\nLet\'s try again, Govard!');
   }
 
   if (winCounter >= 3) {
-    console.log("Congratulations William, you are the champ!");
+    console.log('Congratulations William, you are the champ!');
   }
 }
