@@ -46,7 +46,9 @@ for (let i = 0; i < 3; i += 1) {
     console.log('Correct!');
     wonCounter += 1;
   } else if (sum !== question) {
-    console.log(question + ' is wrong answer ;(. Correct answer was ' + sum + '\nLet\'s try again, Tom!');
+    console.log(
+      question + ' is wrong answer ;(. Correct answer was ' + sum + '\nLet\'s try again, Tom!'
+    );
   }
 
   if (wonCounter >= 3) {
