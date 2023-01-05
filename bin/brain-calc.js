@@ -41,7 +41,7 @@ for (let i = 0; i < 3; i += 1) {
   const question = readlineSync.question(
     `Question: ${num1} ${symb} ${num2} \nYour answer: `
   );
-  // console.log(typeof question);
+
   if (sum === question) {
     console.log('Correct!');
     wonCounter += 1;

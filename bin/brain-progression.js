@@ -4,7 +4,7 @@ import name, { hello as greetings } from './cli.js';
 
 console.log(greetings);
 
-const gameGcd = 'What number is missing in the progression?';
+const gameGcd = "What number is missing in the progression?";
 console.log(gameGcd);
 
 const progression = [];

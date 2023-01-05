@@ -31,7 +31,9 @@ for (let i = 0; i < 3; i += 1) {
     console.log('Correct!');
     winCounter += 1;
   } else if (maxDiv !== question) {
-    console.log(question + ' is wrong answer ;(. Correct answer was ' + maxDiv + '\nLet\'s try again, Govard!');
+    console.log(
+      question + ' is wrong answer ;(. Correct answer was ' + maxDiv + '\nLet\'s try again, Govard!'
+    );
   }
 
   if (winCounter >= 3) {

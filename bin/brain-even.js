@@ -11,6 +11,7 @@ let winCounter = 0;
 for (let i = 0; i < 3; i += 1) {
   const num = Math.floor(Math.random() * 100);
   const question = readlineSync.question(`Question: ${num} \nYour answer: `);
+  // console.log(typeof question);
 
   if (num % 2 === 0 && question === 'yes') {
     console.log('Correct!');
