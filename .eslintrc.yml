@@ -11,4 +11,5 @@ parserOptions:
     "no-console": "off",
     "import/extensions": ["error", "ignorePackages", { "js": "always" }],
     "no-unused-vars": ["warn"],
+    "comma-dangle": ["error", "never"]
   }
