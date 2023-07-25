@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "type": "module",
   "description": "project after exterminatus",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"iError: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
