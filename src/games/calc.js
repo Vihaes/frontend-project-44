@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import randomizer from '../utils.js';
+import { randomizer } from '../utils.js';
 import { runEngine } from '../index.js';
 
 const rules = 'What is the result of the expression?';

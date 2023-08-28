@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import randomizer from '../utils.js';
+import { randomizer } from '../utils.js';
 import { runEngine } from '../index.js';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';

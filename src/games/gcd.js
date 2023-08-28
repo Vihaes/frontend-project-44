@@ -1,24 +1,15 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import randomizer from '../utils.js';
+import { randomizer } from '../utils.js';
 import { runEngine } from '../index.js';
 
 const rules = 'Find the greatest common divisor of given numbers.';
 
 const calculation = (firstNumber, secondNumber) => {
-  let maxDivisor;
-
-  if (firstNumber >= secondNumber) {
-    maxDivisor = secondNumber;
-  } else {
-    maxDivisor = firstNumber;
+  if (firstNumber === 0) {
+    return secondNumber;
   }
-
-  while (firstNumber % maxDivisor !== 0 && secondNumber % maxDivisor !== 0) {
-    maxDivisor -= 1;
-  }
-
-  return maxDivisor;
+  return calculation(secondNumber % firstNumber, firstNumber);
 };
 
 const generateRound = () => {
