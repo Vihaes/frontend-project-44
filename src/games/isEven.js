@@ -5,18 +5,21 @@ import { runEngine } from '../index.js';
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
+let result;
 const calculation = (number, question) => {
   if (number % 2 === 0 && question === 'yes') {
-    return question;
+    result = question;
   } else if (number % 2 === 1 && question === 'no') {
-    return question;
+    result = question;
   } else if (number % 2 === 1 && question === 'yes') {
     return false;
   } else if (number % 2 === 0 && question === 'no') {
     return false;
   } else {
-    throw new Error('${question} - is incorrect value!');
+    throw new Error(`${question} - is incorrect value!`);
   }
+
+  return result;
 };
 
 const generateRound = () => {

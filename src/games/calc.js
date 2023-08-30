@@ -19,7 +19,7 @@ const calculation = (firstNumber, secondNumber, operator) => {
     case '*':
       return firstNumber * secondNumber;
     default:
-      throw new Error('Operator ${operator} - is incorrect!');
+      throw new Error(`Operator ${operator} - is incorrect!`);
   }
 };
 

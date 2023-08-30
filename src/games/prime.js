@@ -12,17 +12,20 @@ const calculation = (number, question) => {
     divisor += 1;
   }
 
+  let result;
   if (number === divisor && question === 'yes') {
-    return question;
+    result = question;
   } else if (number !== divisor && question === 'no') {
-    return question;
+    result = question;
   } else if (number !== divisor && question === 'yes') {
     return false;
   } else if (number === divisor && question === 'no') {
     return false;
   } else {
-    throw new Error('${question} - is incorrect value!');
+    throw new Error(`${question} - is incorrect value!`);
   }
+
+  return result;
 };
 
 const generateRound = () => {
